@@ -1,0 +1,145 @@
+#cover{
+	background-image: linear-gradient(yellow, blue);
+	transition: background 2s ease-in;
+	background-size: 1920px 5100px;
+	background-position: -50px -50px;
+	padding: 2rem;
+}
+
+#cover:hover{
+	background-position: 1920px 5100px;
+}
+
+#cover2{
+	background-image: linear-gradient(red, yellow);
+	transition: background 2s ease-in;
+	background-size: 1920px 5100px;
+	background-position: -50px -50px;
+	padding: 2rem;
+}
+
+#cover2:hover{
+	background-position: 1920px 5100px;
+}
+
+#cover3{
+	background-image: linear-gradient(yellow, blue);
+	transition: background 2s ease-in;
+	background-size: 1920px 5100px;
+	background-position: -50px -50px;
+	padding: 2rem;
+}
+
+#cover3:hover{
+	background-position: 1920px 5100px;
+}
+
+#cover4{
+	background-image: linear-gradient(red, blue);
+	transition: background 2s ease-in;
+	background-size: 1920px 5100px;
+	background-position: -50px -50px;
+	padding: 2rem;
+}
+
+#cover4:hover{
+	background-position: 1920px 5100px;
+}
+
+
+h1{
+	font-size: 5rem;
+	font-family: cursive;
+	display: inline-block;
+	padding: 1rem;
+	color: black;
+}
+
+.container-3 p{
+	padding: 20rem;
+	columns: 2;
+}
+
+
+h2{
+	font-size: 5rem;
+	font-family: cursive;
+	display: inline-block;
+	padding: 1rem;
+	color: white;
+}
+
+.container-2 p{
+	padding: 20rem;
+	columns: 2;
+	color: white;
+}
+
+#special{
+	position: fixed;
+	left: 5%;
+	bottom: 10%;
+}
+
+#special2{
+	position: fixed;
+	left: 5%;
+	bottom: 15%;
+}
+
+#special3{
+	position: fixed;
+	right: 5%;
+	bottom: 11%;
+}
+
+#special4{
+	position: fixed;
+	left: 5%;
+	bottom: 30%;
+}
+
+#special5{
+	position: fixed;
+	right: 5%;
+	bottom: 30%;
+}
+
+#special6{
+	position: fixed;
+	right: 5%;
+	bottom: 50%;
+}
+
+
+#special7{
+	position: fixed;
+	left: 5%;
+	bottom: 50%;
+}
+
+
+#special8{
+	position: fixed;
+	left: 5%;
+	bottom: 68%;
+}
+
+
+#special9{
+	position: fixed;
+	right: 5%;
+	bottom: 65%;
+}
+
+#special10{
+	position: fixed;
+	left: 5%;
+	bottom: 85%;
+}
+
+#special11{
+	position: fixed;
+	right: 5%;
+	bottom: 85%;
+}

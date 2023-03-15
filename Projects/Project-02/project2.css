@@ -1,0 +1,220 @@
+#special{
+	position: fixed;
+	bottom: 0px;
+}
+
+#special2{
+	position: fixed;
+	left: 40%;
+	bottom: 0px;
+}
+
+#special3{
+	position: fixed;
+	left: 80%;
+	bottom: 0px;
+}
+
+#special4{
+	position: fixed;
+	left: 30%;
+	bottom: 20%;
+}
+
+#special5{
+	position: fixed;
+	left: 60%;
+	bottom: 20%;
+}
+
+#special6{
+	position: fixed;
+	left: 50%;
+	bottom: 40%;
+}
+
+
+#special7{
+	position: fixed;
+	left: 40%;
+	bottom: 40%;
+}
+
+
+#special8{
+	position: fixed;
+	left: 20%;
+	bottom: 60%;
+}
+
+
+#special9{
+	position: fixed;
+	left: 70%;
+	bottom: 60%;
+}
+
+#special10{
+	position: fixed;
+	left: 10%;
+	bottom: 80%;
+}
+
+#special11{
+	position: fixed;
+	left: 80%;
+	bottom: 80%;
+}
+
+#position1{
+	position: absolute;
+	right:90px;
+}
+
+#position2{
+	position: absolute;
+	left: 22.5%;
+}
+
+#position3{
+	position: absolute;
+	right:90px;
+}
+
+#cover{
+	background-image: linear-gradient(red, blue);
+	transition: background 2s ease-in;
+	background-size: 1920px 5000px;
+	background-position: -500px -500px;
+	padding: 5rem;
+}
+
+#cover:hover{
+	background-position: 1920px 5000px;
+}
+
+#cover2{
+	background-image: linear-gradient(blue, red);
+	transition: background 2s ease-in;
+	background-size: 1920px 3000px;
+	background-position: -500px -500px;
+	padding: 5rem;
+}
+
+#cover2:hover{
+	background-position: 1920px 3000px;
+}
+
+
+h1{
+	font-size: 3rem;
+	font-family: cursive;
+	display: inline-block;
+	padding: 1rem;
+	color: white;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+}
+
+.container {
+  height: 100%;
+  width: 100%;
+}
+
+.p {
+  position: absolute;
+  font-size: 2rem;
+  font-family: sans-serif;
+  font-weight: bold;
+  top: 20%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  white-space: nowrap;
+}
+
+@media only screen and (min-width: 500px) {
+  .p {
+    font-size: 3rem;
+  }
+}
+
+@media only screen and (min-width: 700px) {
+  .p {
+    font-size: 5rem;
+  }
+}
+
+.p1 {
+  text-shadow: 1px 1px 1px black, -1px -1px 1px black;
+  color: blue;
+}
+
+.p2 {
+  color: white;
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+  animation: text-animation 3s ease-in-out forwards alternate infinite;
+  text-shadow: 1px 1px 1px black, -1px -1px 1px black;
+}
+
+.p3 {
+  height: 20%;
+  color: transparent;
+}
+
+@keyframes text-animation {
+  from {
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+  }
+  to {
+    clip-path: polygon(0 0, 0% 1%, 0% 100%, 0% 100%);
+  }
+}
+
+.cursor {
+  position: absolute;
+  top: 50%;
+  height: 100%;
+  width: 100%;
+  transform: translate(0, -50%);
+  border-right: 2px solid red;
+  animation: cursor-animation 3s ease-in-out forwards alternate infinite;
+}
+
+@keyframes cursor-animation {
+  from {
+    width: 100%;
+  }
+  to {
+    width: 0;
+  }
+}
+
+body{
+	font-size: 18px;
+	color: white;
+}
+
+.container-1 p{
+	columns: 4;
+}
+
+.container-2 p{
+	columns: 6;
+}
+
+.container-3 p{
+	columns: 4;
+}
+
+.container-4 p{
+	columns: 4;
+}
+
