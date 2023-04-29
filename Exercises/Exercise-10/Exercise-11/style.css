@@ -1,0 +1,16 @@
+.container{
+	background-color: hotpink;
+	display: flex;
+	width: 500px;
+	flex-direction: row;
+}
+
+.item-1{
+	background-color: red;
+}
+.item-2{
+	background-color: blue;
+}
+.item-3{
+	background-color: green;
+}
