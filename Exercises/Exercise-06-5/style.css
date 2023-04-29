@@ -1,0 +1,184 @@
+body {
+	background: #DADADA;
+}
+
+.bg{
+	width: 910px;
+	height: 910px;
+	position: absolute;
+	background: ghostwhite;
+	border-radius: 800px;
+	top: 0.5%;
+	left: 22%;
+	animation: scale 10s infinite;
+}
+
+.box1{
+	width: 400px;
+	height: 400px;
+	border-radius: 400px 400px;
+	position: absolute;
+	background: orange;
+	top: 0%;
+	left: 0%;
+	offset-path: path("M20,0 C20,0 0,40 500,800");
+  	animation: move 4000ms infinite alternate ease-in-out, fadeIn 1s, scale 1s infinite, background 3s infinite;
+
+}
+
+.box2{
+	width: 370px;
+	height: 370px;
+	border-radius: 400px 400px;
+	position: absolute;
+	background: orangered;
+	top: 0%;
+	left: 7%;
+	offset-path: path("M20,0 C20,0 0,40 500,800");
+  	animation: move 3750ms infinite alternate ease-in-out, fadeIn 1s, scale 1s infinite, background 3s infinite;
+}
+
+.box3{
+	width: 340px;
+	height: 340px;
+	border-radius: 400px 400px;
+	position: absolute;
+	background: yellow;
+	top: 0%;
+	left: 14%;
+	offset-path: path("M20,0 C20,0 0,40 500,800");
+  	animation: move 3500ms infinite alternate ease-in-out, fadeIn 1s, scale 1s infinite, background 3s infinite;
+}
+
+.box4{
+	width: 310px;
+	height: 310px;
+	border-radius: 400px 400px;
+	position: absolute;
+	background: mediumvioletred;
+	top: 0%;
+	left: 21%;
+	offset-path: path("M20,0 C20,0 0,40 500,800");
+  	animation: move 3250ms infinite alternate ease-in-out, fadeIn 1s, scale 1s infinite, background 3s infinite;
+}
+
+.box5{
+	width: 280px;
+	height: 280px;
+	border-radius: 400px 400px;
+	position: absolute;
+	background: lightgoldenrodyellow;
+	top: 0%;
+	left: 28%;
+	offset-path: path("M20,0 C20,0 0,40 500,800");
+  	animation: move 3000ms infinite alternate ease-in-out, fadeIn 1s, scale 1s infinite, background 3s infinite;
+}
+
+.box6{
+	width: 250px;
+	height: 250px;
+	border-radius: 400px 400px;
+	position: absolute;
+	background: darkorange;
+	top: 0%;
+	left: 35%;
+	offset-path: path("M20,0 C20,0 0,40 500,800");
+  	animation: move 2750ms infinite alternate ease-in-out, fadeIn 1s, scale 1s infinite, background 3s infinite;
+}
+
+.box7{
+	width: 220px;
+	height: 220px;
+	border-radius: 400px 400px;
+	position: absolute;
+	background: orangered;
+	top: 0%;
+	left: 42%;
+	offset-path: path("M20,0 C20,0 0,40 500,800");
+  	animation: move 2500ms infinite alternate ease-in-out, fadeIn 1s, scale 1s infinite, background 3s infinite;
+}
+
+.box8{
+	width: 190px;
+	height: 190px;
+	border-radius: 400px 400px;
+	position: absolute;
+	background: mediumvioletred;
+	top: 0%;
+	left: 49%;
+	offset-path: path("M20,0 C20,0 0,40 500,800");
+  	animation: move 2250ms infinite alternate ease-in-out, fadeIn 1s, scale 1s infinite, background 3s infinite;
+}
+
+.box9{
+	width: 160px;
+	height: 160px;
+	border-radius: 400px 400px;
+	position: absolute;
+	background: palevioletred;
+	top: 0%;
+	left: 56%;
+	offset-path: path("M20,0 C20,0 0,40 500,800");
+  	animation: move 2000ms infinite alternate ease-in-out, fadeIn 1s, scale 1s infinite, background 3s infinite;
+}
+
+.box10{
+	width: 130px;
+	height: 130px;
+	border-radius: 400px 400px;
+	position: absolute;
+	background: yellow;
+	top: 0%;
+	left: 63%;
+	offset-path: path("M20,0 C20,0 0,40 500,800");
+  	animation: move 1750ms infinite alternate ease-in-out, fadeIn 1s, scale 1s infinite, background 3s infinite;
+}
+
+.box11{
+	width: 100px;
+	height: 100px;
+	border-radius: 400px 400px;
+	position: absolute;
+	background: deeppink;
+	top: 0%;
+	left: 70%;
+	offset-path: path("M20,0 C20,0 0,40 500,800");
+  	animation: move 1500ms infinite alternate ease-in-out, fadeIn 1s, scale 1s infinite, background 3s infinite;
+}
+
+.box12{
+	width: 70px;
+	height: 70px;
+	border-radius: 50px 50px;
+	position: absolute;
+	background: orange;
+	top: 0%;
+	left: 78%;
+	offset-path: path("M20,0 C20,0 0,40 500,800");
+  	animation: move 1250ms infinite alternate ease-in-out, fadeIn 1s, scale 1s infinite, background 3s infinite;
+}
+
+@keyframes move {
+  0% {
+    offset-distance: 0%;
+  }
+  100% {
+    offset-distance: 100%;
+  }
+}
+
+@keyframes background {
+  from {background-color: white;}
+  to {background-color: none;}
+}
+
+@keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+@keyframes scale {
+  0% {transform: scale(2.0); }
+ 100% {transform: scale(1.0);
+ 
+}
