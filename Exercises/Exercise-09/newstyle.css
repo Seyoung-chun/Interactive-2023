@@ -1,0 +1,147 @@
+
+.container {
+	width: 100%;
+	height: 100%;
+	justify-content: space-evenly;
+	background-color: lightpink;
+}
+
+.shape1 {
+	display: none;
+}
+
+.shape2 {
+	display: none;
+}
+
+.shape3 {
+	display: none;
+}
+.shape4 {
+	position: absolute;
+	top: 0%;
+	left: 30%;
+	width: auto;
+	height: auto;
+	background-color: lightpink;
+}
+
+.box {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background-color: orange;
+}
+
+@media screen and (max-width: 1920px) {
+
+.container {
+	width: 100%;
+	height: 100%;
+	justify-content: space-evenly;
+	background-color: lightpink;
+}
+
+
+.shape1 {
+	display: none;
+}
+
+.shape2 {
+	display: none;
+}
+
+.shape3 {
+	top: -30%;
+	left: 30%;
+	position: absolute;
+	width: auto;
+	height: auto;
+	display: block;
+}
+
+.shape4 {
+	display: none;
+}
+.box {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background-color: ghostwhite;
+}
+}
+
+@media screen and (max-width: 1080px) {
+
+.container {
+	width: 100%;
+	height: 100%;
+	justify-content: space-evenly;
+	background-color: lightpink;
+}
+
+.shape1 {
+	display: none;
+}
+
+.shape2 {
+	top: 0%;
+	left: 30%;
+	position: absolute;
+	width: auto;
+	height: auto;
+	display: block;
+}
+
+.shape3 {
+	display: none;
+}
+
+.shape4 {
+	display: none;
+}
+.box {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background-color: greenyellow;
+}
+}
+
+@media screen and (max-width: 768px) {
+
+.container {
+	width: 100%;
+	height: 100%;
+	justify-content: space-evenly;
+	background-color: lightpink;
+}
+
+.shape1 {
+	position: absolute;
+	top: 0%;
+	left: 30%;
+	width: auto;
+	height: auto;
+	display: block;
+}
+
+.shape2 {
+	display: none;
+}
+
+.shape3 {
+	display: none;
+}
+
+.shape4 {
+	display: none;
+}
+.box {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background-color: lightpink;
+}
+}
+
