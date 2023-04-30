@@ -1,65 +1,46 @@
-:root{
-	--second:  1s;
-	--minute: calc(var(--second)*60);
-	--hour: calc(var(--minute)*60);
-	--halfday:  calc(var(--hour)*12);
-	--setTimeHour:  2;
-	--setTimeMinute: 15;
-	--timeShiftHour:  calc(var(--setTimeHour)*var(--hour));
-	--timeShiftMinute: calc(var(--setTimeMinute)*var(--minute));
-}
 
-@keyframes rotate{
+@keyframes rotate {
 	from{transform: rotate(0);}
 	to{transform: rotate(1turn);}
 }
-
-.seconds{
-	--width: 5px;
-	--height: 150px;
-	--background-color: green;
-	animation: rotate steps(60) var(--minute) infinite;
+#moving{
+	position: fixed;
+	top:60%;
+	left:50%;
+	opacity:50%;
+	scale: 5.0;
+	width: 5px;
+	height: 150px;
+	background-color: white;
+	animation: rotate 1s infinite
 }
 
-.minute{
-	--width: 10px;
-	--height: 150px;
-	--background-color: blue;
-	animation: rotate steps(60) var(--hour) infinite;
-	animation-delay: calc(var(--timeShiftMinute)*-1);
+.container{
+	text-align: center;
+	font-family:monospace;
+	padding: 10px;
 }
 
-
-
-.hour{
-	--width: 10px;
-	--height: 100px;
-	--background-color: pink;
-	animation:  rotate steps(12) var(--halfday) infinite;
-	animation-delay: calc((var(--timeShiftHour) + var(--timeShiftMinute)) * -1);
+#date {
+	font-size: 0.5em;
+}
+#hour {
+	font-size: 3em;
+}
+#minutes {
+	font-size: 3em;
+}
+#seconds {
+	font-size: 3em;
 }
 
-.hand{
-	position: absolute;
-	left: calc(50% - var(--width)/2);
-	width: var(--width);
-	height: var(--height);
-	background-color: var(--background-color);
-	top: 50%;
-	transform-origin: center 0;
-	border-radius: calc(var(--width)/2);
-}
+.clock{
+  padding: 500px;
+  color:white;
+  width: auto;
+  height: 100px;
+  margin: 5px auto;
+  border: 2px solid black;
+  border-radius: 10px;
+  background-image: url("https://i.imgur.com/Rz14122.jpg");
 
-.clockface{
-	width: 300px;
-	height: 300px;
-	border-radius: 100%;
-	position: relative;
-	animation: background-color ease var(--minute) infinite;
-	transform: rotate(180deg);
-}
-
-@keyframes background-color{
-	from{background-color: red;}
-	to{background-color:  blue}
-}

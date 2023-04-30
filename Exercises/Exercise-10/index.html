@@ -1,16 +1,24 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<meta charset="utf-8">
-		<title> Clock CSS </title>
+		<script src="script.js"></script>
 		<link href="style.css" rel="stylesheet">
+		<meta name="viewport" content="width=device-width,initial-scale=1" />
 	</head>
 
 	<body>
-		<div class="clockface">
-			<div class="seconds hand"></div>
-			<div class="minute hand"></div>
-			<div class="hour hand"></div>
+		<div class="container">
+		<div class="clock">
+		<div id="date"></div> <br>
+		<div id="hour"></div>
+		<div id="minutes"></div>
+		<div id="seconds"></div><br>
+		<button type="button" onclick="location.href='https://savvytime.com/converter/kst-to-pdt';" id="stop">KST to PDT</button>
+		<button type="button" onclick="location.href='https://www.worldtimebuddy.com/pdt-to-est-converter';" id="stop">PDT to EST</button>
+		<div class="root">
+			<div id="moving">
 		</div>
+		</div>
+	</div>
 	</body>
 </html>
