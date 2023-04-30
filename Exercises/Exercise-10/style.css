@@ -1,134 +1,65 @@
-.body {
-	background-color: pink;
+:root{
+	--second:  1s;
+	--minute: calc(var(--second)*60);
+	--hour: calc(var(--minute)*60);
+	--halfday:  calc(var(--hour)*12);
+	--setTimeHour:  2;
+	--setTimeMinute: 15;
+	--timeShiftHour:  calc(var(--setTimeHour)*var(--hour));
+	--timeShiftMinute: calc(var(--setTimeMinute)*var(--minute));
 }
-.header {
+
+@keyframes rotate{
+	from{transform: rotate(0);}
+	to{transform: rotate(1turn);}
+}
+
+.seconds{
+	--width: 5px;
+	--height: 150px;
+	--background-color: green;
+	animation: rotate steps(60) var(--minute) infinite;
+}
+
+.minute{
+	--width: 10px;
+	--height: 150px;
+	--background-color: blue;
+	animation: rotate steps(60) var(--hour) infinite;
+	animation-delay: calc(var(--timeShiftMinute)*-1);
+}
+
+
+
+.hour{
+	--width: 10px;
+	--height: 100px;
+	--background-color: pink;
+	animation:  rotate steps(12) var(--halfday) infinite;
+	animation-delay: calc((var(--timeShiftHour) + var(--timeShiftMinute)) * -1);
+}
+
+.hand{
 	position: absolute;
-	top: -10%;
-	left: 30%;
-	margin: 100px;
+	left: calc(50% - var(--width)/2);
+	width: var(--width);
+	height: var(--height);
+	background-color: var(--background-color);
+	top: 50%;
+	transform-origin: center 0;
+	border-radius: calc(var(--width)/2);
 }
 
-.container{
-	background-color: pink;
-	display: flex;
-	width: 1000px;
-	flex-flow: row wrap;
-	align-items: flex-end;
-	justify-content: space-around;
-	margin: 100px;
+.clockface{
+	width: 300px;
+	height: 300px;
+	border-radius: 100%;
+	position: relative;
+	animation: background-color ease var(--minute) infinite;
+	transform: rotate(180deg);
 }
 
-.item-1{
-	background-color: red;
-	flex: 1;
-	color: white;
-	order: 4;
+@keyframes background-color{
+	from{background-color: red;}
+	to{background-color:  blue}
 }
-
-.item-2{
-	background-color: green;
-	flex: 1;
-	color: white;
-	order: 1;
-}
-
-.item-3{
-	background-color: blue;
-	flex: 1;
-	color: white;
-	order: 2;
-}
-
-.item-4{
-	background-color: orange;
-	flex: 1;
-	color: white;
-	order: 3;
-}
-
-.item-5{
-	background-color: orange;
-	flex: 1;
-	color: white;
-	order: 3;
-}
-
-
-.item-6{
-	background-color: orange;
-	flex: 1;
-	color: white;
-	order: 3;
-}
-
-
-.item-7{
-	background-color: orange;
-	flex: 1;
-	color: white;
-	order: 3;
-}
-
-.container2{
-	background-color: pink;
-	display: flex;
-	width: 1000px;
-	flex-flow: row wrap;
-	align-items: flex-end;
-	justify-content: space-around;
-	margin: 100px;
-}
-
-.item-8{
-	background-color: red;
-	flex: 1;
-	color: white;
-	order: 4;
-}
-
-.item-9{
-	background-color: green;
-	flex: 1;
-	color: white;
-	order: 1;
-}
-
-.item-10{
-	background-color: blue;
-	flex: 1;
-	color: white;
-	order: 2;
-}
-
-.item-11{
-	background-color: orange;
-	flex: 1;
-	color: white;
-	order: 3;
-}
-
-.item-12{
-	background-color: orange;
-	flex: 1;
-	color: white;
-	order: 3;
-}
-
-
-.item-13{
-	background-color: orange;
-	flex: 1;
-	color: white;
-	order: 3;
-}
-
-
-.item-14{
-	background-color: orange;
-	flex: 1;
-	color: white;
-	order: 3;
-}
-
-
-

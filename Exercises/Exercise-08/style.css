@@ -1,0 +1,115 @@
+body{
+	background: lightblue;
+}
+
+.shape{
+	position: absolute;
+	left: 100px;
+	top: 100px;
+	width: 800px;
+	height: 300px;
+	opacity: 1;
+}
+
+.shape2{
+	position: absolute;
+	left: 100px;
+	top: 100px;
+	width: 800px;
+	height: 300px;
+	opacity: 0;
+}
+
+.shape3{
+	position: absolute;
+	left: 100px;
+	top: 100px;
+	width: 800px;
+	height: 300px;
+	opacity: 0;
+}
+
+.shape4{
+	position: absolute;
+	left: 100px;
+	top: 100px;
+	width: 800px;
+	height: 300px;
+	opacity: 0;
+}
+
+
+
+@media screen and (min-width: 600px) and 
+(orientation: landscape){
+
+body{
+	background: pink;
+}
+
+.shape2{
+	position: absolute;
+	left: 100px;
+	top: 100px;
+	width: 800px;
+	height: 300px;
+	opacity: 1;
+}
+
+.shape{
+	opacity: 0;
+}
+}
+
+
+
+@media screen and (min-width: 768px) and 
+(orientation: landscape){
+
+body{
+	background: ghostwhite;
+}
+.shape3{
+	position: absolute;
+	left: 100px;
+	top: 100px;
+	width: 800px;
+	height: 300px;
+	opacity: 1;
+}
+
+.shape{
+	opacity: 0;
+}
+
+.shape2{
+	opacity: 0;
+}
+}
+
+
+
+@media screen and (min-width: 768px) and (orientation: landscape){
+	body{
+	background: yellowgreen;
+}
+.shape4{
+	position: absolute;
+	left: 100px;
+	top: 100px;
+	width: 800px;
+	height: 300px;
+	opacity: 1;
+}
+
+.shape3{
+	opacity: 0;
+	}
+.shape{
+	opacity: 0;
+}
+
+.shape2{
+	opacity: 0;
+}
+}
